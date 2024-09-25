@@ -1,33 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Цікаві сайти онлайн</title>
+<title>Соколов Даниїл-Юліан</title>
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<style>
+    .moving-gif {
+      position: fixed;
+      width: 500px; /* Adjust size as needed */
+      animation: move-corners 10s linear infinite;
+    }
+
+    @keyframes move-corners {
+      0% {
+        top: 0;
+        left: 0;
+      }
+      30% {
+        top: 0;
+        left: calc(100% - 500px);
+      }
+      50% {
+        top: calc(64%);
+        left: calc(100% - 500px);
+      }
+      80% {
+        top: calc(64%);
+        left: 0;
+      }
+      100% {
+        top: 0;
+        left: 0;
+      }
+    }
+	
+	.jumping-gif {
+		  animation: jump 120s forwards;
+	}
+	
+	@keyframes jump {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+	
+	
+</style>
 </head>
-<body style="background-color:#fcf3cf;text-align:center;">
-<h1 style="color:#7d3c98;">Цікаві сайти</h1>
-<p style="color:#7d3c98;"> Лабораторна робота 3</p>
-<p style="color:#7d3c98;"> Створення простої сторінки</p>
-<table>
-  <tr>
-    <th><a style="font-size:300%;" href="https://sliding.toys/mystic-square/8-puzzle/daily/">8 puzzle</a></th>
-    <th><a style="font-size:300%;" href="https://maze.toys/">mazes</a></th>
-	<th><a style="font-size:300%;" href="https://paint.toys/">paintings</a></th>
-  </tr>
-  <tr>
-    <th><img src="images/8 puzzle.png" alt="8 puzzle" style="width:550px;height:550px;"></th>
-    <th><img src="images/mazes.png" alt="mazes" style="width:550px;height:550px;"></th>
-	<th><img src="images/painting.png" alt="painting" style="width:550px;height:550px;"></th>
-  </tr>
-  <tr>
-    <th><a style="font-size:300%;" href="https://clicking.toys/flip-grid/neat-nine/3-holes/">lights</a></th>
-    <th><a style="font-size:300%;" href="https://optical.toys/">optical illusions</a></th>
-    <th><a style="font-size:300%;" href="https://memory.toys/">memory</a></th>
-  </tr>
-  <tr>
-    <th><img src="images/lights.png" alt="lights" style="width:550px;height:550px;"></th>
-    <th><img src="images/illusions.png" alt="illusions" style="width:550px;height:550px;"></th>
-	<th><img src="images/memory.png" alt="memory" style="width:550px;height:550px;"></th>
-  </tr>
-</table>
+<body style="background-color:#000000;text-align:center;">
+<h6 style="color:#E53427;">лабораторна робота 4</h6>
+<img src="images/eyes.gif" alt="watching you" class="moving-gif" style="z-index:99;">
+<p style="color:#DBD9D7;">Unchanged picture</p>
+<img src="images/super hot orig.jpg" alt="super hot orig" style="border:solid white">
+<p style="color:#DBD9D7;">Changed picture</p>
+<img src="images/super hot changed.jpg" alt="super hot edit" style="border:solid white">
+<p style="color:#DBD9D7;">Logo</p>
+<img src="images/Logo.jpg" alt="logo">
+<p style="color:#DBD9D7;">simple svg figure</p>
+<img src="images/figure.svg" alt="svg orig" style="background-color:#72190F">
+<p style="color:#DBD9D7;">changed svg figure</p>
+<img src="images/figure(1).svg" alt="svg edit" style="background-color:#72190F">
+<p></p>
+<img src="images/lips.webp" alt="the lips" style="background-color:#72190F" class="jumping-gif">
+
 </body>
 </html>
